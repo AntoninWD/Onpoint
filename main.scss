@@ -145,18 +145,12 @@ body {
 }
 
 .border {
-  width: 60%;
-  margin-left: 20%;
-  border-top: 20px dotted $color-primary;
-  opacity: 0.6;
+  width: 100%;
+  border-top: 5px solid $color-primary;
+  border-radius: 2rem;
+  opacity: 1;
   position: absolute;
-  bottom: -10px;
-  @media only screen and (min-width: $desktop-media) {
-    width: 40%;
-    margin-left: 30%;
-    border-top: 30px dotted $color-primary;
-    bottom: -14px;
-  }
+  bottom: -4px;
 }
 
 .form {
@@ -172,8 +166,10 @@ body {
     font-size: 2rem;
     font-weight: 700;
     text-align: start;
-    color: $color-primary;
-    margin-left: 20%;
+    color: $color-third;
+    @media only screen and (min-width: $desktop-media) {
+      margin-left: 5%;
+    }
   }
 
   &__type {
@@ -341,6 +337,7 @@ body {
 
   &__title {
     padding-top: 2rem;
+    margin-left: 0;
   }
   &__container {
     font-size: 1.5rem;

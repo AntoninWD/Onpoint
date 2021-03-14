@@ -48,7 +48,7 @@ const container = document.querySelector(".container");
 
 // variable declaration
 let time;
-let firstTime;
+let secTime;
 let set;
 let firstStart = false;
 let isPaused = false;
@@ -83,9 +83,7 @@ const directionsContainer = function (first) {
     <div class="form__selection directions__container">
     <p>
       Preheat your grill. Place meat over direct heat for ${first} minutes on the first
-      side. Grill for another ${
-        time / 60
-      } minutes on the second side. Let rest for 5
+      side. Grill for another ${secTime} minutes on the second side. Let rest for 5
       minutes. Enjoy.
     </p>
     </div>
@@ -112,12 +110,17 @@ const getSecondTime = function () {
     if (steak.name === getChecked(checkedType)) {
       steak.size.forEach((size, i) => {
         if (size === getChecked(checkedThick)) {
-          time = steak.secondSide[i];
-          return (time = time * 60);
+          secTime = steak.secondSide[i];
+
+          if (sideHeader.textContent === "Second Side") {
+            time = steak.secondSide[i];
+            return (time = time * 60);
+          }
         }
       });
     }
   });
+  return secTime / 60;
 };
 
 // start time function

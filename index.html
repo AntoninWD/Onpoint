@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <script defer src="main.js"></script>
+    <title>Onpoint</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Onpoint</h1>
+    </header>
+    <div class="intro">
+      <!-- <img class="intro__image" src="img/steak.png" alt="" /> -->
+      <h4 class="intro__steak">Grill your steak to perfection</h4>
+      <button class="intro__btn btn">
+        <img class="arrow" src="img/down-arrow.png" alt="" />
+      </button>
+    </div>
+    <div class="choose">
+      <img class="choose__image" src="img/choose.png" alt="image" />
+      <div class="choose__container">
+        <h1 class="choose__title">Choose your ideal steak</h1>
+      </div>
+      <div class="border"></div>
+    </div>
+
+    <div class="container">
+      <form class="form">
+        <div class="form__type">
+          <h2 class="form__title">Cooking type</h2>
+
+          <div class="form__selection">
+            <div class="form__section">
+              <label class="form__label"
+                >Rare (120 ℉)
+                <input id="check-rare" name="type" type="radio" value="rare" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="form__section">
+              <label class="form__label"
+                >Medium rare (130 ℉)
+                <input
+                  id="check-mediumrare"
+                  name="type"
+                  type="radio"
+                  value="mediumRare"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="form__section">
+              <label class="form__label"
+                >Medium (140 ℉)
+                <input
+                  id="check-medium"
+                  name="type"
+                  type="radio"
+                  value="medium"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="form__section">
+              <label class="form__label"
+                >Well done (160 ℉)
+                <input
+                  id="check-welldone"
+                  name="type"
+                  type="radio"
+                  value="wellDone"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form__thick">
+          <h2 class="form__title">Thickness</h2>
+          <div class="form__selection">
+            <div class="form__section">
+              <label class="form__label">
+                1/2 inch
+                <input id="check-half" name="thick" type="radio" value="half" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="form__section">
+              <label class="form__label">
+                3/4 inch
+                <input
+                  id="check-threequarter"
+                  name="thick"
+                  type="radio"
+                  value="threeQuarter"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="form__section">
+              <label class="form__label">
+                1 inch
+                <input id="check-one" name="thick" type="radio" value="one" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="form__section">
+              <label class="form__label">
+                1 1/2 inch
+                <input
+                  id="check-onehalf"
+                  name="thick"
+                  type="radio"
+                  value="oneHalf"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <div class="form__section">
+              <label class="form__label">
+                2 inch
+                <input id="check-two" name="thick" type="radio" value="two" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form__ready">
+          <button class="btn form__ready__btn">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="timer hidden">
+      <h3 class="timer__side">First Side</h3>
+      <div class="time">
+        <div class="time__circle">
+          <div class="time__inner--circle">
+            <h3></h3>
+          </div>
+        </div>
+      </div>
+      <button class="time__btn time__start">
+        <img src="img/play.png" alt="" />
+      </button>
+      <button class="time__btn time__pause">
+        <img src="img/pause.png" alt="" />
+      </button>
+
+      <div class="directions">
+        <h3 class="form__title directions__title">Directions</h3>
+        <div class="form__selection directions__container">
+          <p>Please select your ideal steak above.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+        &copy; Copyright by
+        <a href="https://www.linkedin.com/in/antonin-arsenault-38380914a/"
+          >Antonin Arsenault</a
+        >
+
+        Portfolio Project 2021
+      </p>
+    </footer>
+  </body>
+</html>

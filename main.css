@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ececec;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  position: absolute;
+  padding: 2rem;
+}
+
+.header__title {
+  color: #ececec;
+  font-size: 3.5rem;
+  font-family: "Lobster", cursive;
+}
+
+.header__primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  height: 5rem;
+}
+
+.header__slogan {
+  color: #d85b65;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    padding-left: 5rem;
+  }
+}
+
+.intro {
+  color: #5f5f5f;
+  padding-top: 18rem;
+  padding-left: 2rem;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("img/steak-background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/steak-background.png");
+  height: 62vh;
+}
+
+.intro__steak {
+  color: #ececec;
+  font-size: 3rem;
+  font-weight: 600;
+  width: 25rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .intro {
+    height: 75vh;
+    padding-top: 20rem;
+    padding-left: 5rem;
+  }
+  .intro__steak {
+    font-size: 4rem;
+    width: 50rem;
+  }
+}
+
+.arrow {
+  width: 2rem;
+  color: #ececec;
+}
+
+.btn {
+  font-weight: 700;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  margin: 2rem;
+  border: 1.5px solid #d85b65;
+  color: #ececec;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #ececec;
+  color: #5f5f5f;
+  border: 1px solid #d85b65;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.choose {
+  text-align: center;
+  background: #ececec;
+  color: #5f5f5f;
+  height: 30rem;
+  position: relative;
+  padding-top: 3rem;
+}
+
+.choose__image {
+  width: 9rem;
+  padding-top: 3rem;
+}
+
+.choose__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.choose__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  width: 90%;
+}
+
+.border {
+  width: 60%;
+  margin-left: 20%;
+  border-top: 20px dotted #d85b65;
+  opacity: 0.6;
+  position: absolute;
+  bottom: -10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .border {
+    width: 40%;
+    margin-left: 30%;
+    border-top: 30px dotted #d85b65;
+    bottom: -14px;
+  }
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto 7rem;
+      grid-template-rows: auto auto 7rem;
+      grid-template-areas: "type" "thick" "start";
+}
+
+.form__title {
+  padding: 10rem 0 2rem 5%;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: start;
+  color: #d85b65;
+  margin-left: 20%;
+}
+
+.form__type {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: type;
+}
+
+.form__thick {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: thick;
+}
+
+.form__selection {
+  padding-left: 2rem;
+  background-color: rgba(216, 91, 101, 0.9);
+  border-radius: 0.5rem;
+  width: 90%;
+  margin-left: 5%;
+  -webkit-box-shadow: 2px 2px 5px #2a2a2a;
+          box-shadow: 2px 2px 5px #2a2a2a;
+}
+
+@media only screen and (min-width: 600px) {
+  .form__selection {
+    width: 80%;
+    margin-left: 10%;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+.form__section {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__ready {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: start;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 3rem;
+  z-index: 1;
+}
+
+.form__ready__btn {
+  width: 20rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+}
+
+.form__label {
+  display: block;
+  position: relative;
+  padding-left: 4rem;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ececec;
+}
+
+/* Hide the browser's default radio button */
+.form__label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ececec;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.form__label:hover input ~ .checkmark {
+  background-color: #b81b2a;
+  border: 1px solid black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* When the radio button is checked, add a  background */
+.form__label input:checked ~ .checkmark {
+  background-color: #b81b2a;
+  border: 1px solid black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.timer {
+  padding-top: 20rem;
+  text-align: center;
+}
+
+.timer__side {
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  color: #ececec;
+}
+
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.time__circle {
+  height: 24rem;
+  width: 24rem;
+  background-color: #d85b65;
+  border-radius: 50%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3em;
+}
+
+.time__inner--circle {
+  height: 22rem;
+  width: 22rem;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 5.5rem;
+}
+
+.time__btn {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 2rem;
+  padding: 1rem 3rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 2px solid #d85b65;
+  border-radius: 3rem;
+}
+
+.time__btn:hover {
+  cursor: pointer;
+  background-color: rgba(211, 51, 51, 0.2);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.time__btn:focus {
+  outline: none;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.directions {
+  padding-bottom: 3rem;
+}
+
+.directions__title {
+  padding-top: 2rem;
+}
+
+.directions__container {
+  font-size: 1.5rem;
+  height: 15rem;
+  width: 90%;
+  margin-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.footer {
+  background: #ececec;
+  color: #5f5f5f;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

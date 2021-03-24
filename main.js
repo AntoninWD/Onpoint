@@ -177,6 +177,7 @@ const ready = function () {
   readyBtn.addEventListener("click", function (e) {
     e.preventDefault();
     getFirstTime();
+    timer.textContent = "";
     sideHeader.textContent = "First Side";
     timer.style.color = "#ececec";
     timeContainer.classList.remove("hidden");

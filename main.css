@@ -78,7 +78,6 @@ body {
   background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("img/steak-background.png");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/steak-background.png");
-  height: 62vh;
 }
 
 .intro__steak {
@@ -90,7 +89,6 @@ body {
 
 @media only screen and (min-width: 600px) {
   .intro {
-    height: 75vh;
     padding-top: 20rem;
     padding-left: 5rem;
   }
